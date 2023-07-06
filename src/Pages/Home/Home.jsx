@@ -1,12 +1,13 @@
-import React from 'react'
-import Hero from './Hero/Hero'
+import Hero from "./Hero/Hero";
 
 const Home = () => {
   return (
-    <div>
-      <Hero/>
+    <div className='w-full mx-auto grid grid-cols-12'>
+      <div className='col-span-full'>
+        <Hero />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
