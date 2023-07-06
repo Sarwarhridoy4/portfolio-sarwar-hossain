@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 const FirstHalf = () => {
   return (
@@ -16,7 +17,7 @@ const FirstHalf = () => {
         <div className='bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 inline-block'>
           <Typewriter
             options={{
-              strings: ["React","Front-End", "BackEnd", "Full-Stack(MERN)"],
+              strings: ["React", "Front-End", "BackEnd", "Full-Stack(MERN)"],
               autoStart: true,
               loop: true,
             }}
@@ -24,6 +25,28 @@ const FirstHalf = () => {
         </div>
         <span> Developer</span>
       </p>
+      <div className='w-full mx-auto'>
+        <div className='flex flex-col md:flex-row gap-3 items-center justify-between my-20'>
+          <motion.button
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 1.1 }}
+            className='uppercase w-40 h-10 bg-fuchsia-600 hover:rounded-full hover:transition-500 hover:bg-gradient-to-r from-sky-500 to-indigo-500'
+          >
+            Resume
+          </motion.button>
+          <motion.button
+            whileHover={{
+              scale: 1.2,
+            }}
+            whileTap={{
+              scale: 1.1,
+            }}
+            className='uppercase w-40 h-10 bg-fuchsia-600 hover:rounded-full hover:transition-500 hover:bg-gradient-to-r from-sky-500 to-indigo-500'
+          >
+            contact me
+          </motion.button>
+        </div>
+      </div>
     </div>
   );
 };

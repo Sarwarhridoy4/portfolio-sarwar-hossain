@@ -65,7 +65,7 @@ const Header = () => {
   ];
 
   return (
-    <div className='btm-nav'>
+    <div className='btm-nav z-50'>
       {Navs?.map((nav, i) => (
         <Link key={i} to={nav?.link}>
           <button

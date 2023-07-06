@@ -9,7 +9,7 @@ const SecondHalf = () => {
         backgroundPosition:'center',
         backgroundRepeat:'no-repeat'
       }}>
-        <img src={img} alt='sarwar-imaga' className='w-[60%]' />
+        <img src={img} alt='sarwar-image' className='w-[50%]' />
       </div>
     </div>
   );
