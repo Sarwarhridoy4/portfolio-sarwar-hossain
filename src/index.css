@@ -5,3 +5,27 @@
 html {
     scroll-behavior: smooth;
 }
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #2791EB; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    /* background: #8A3FFC;  */
+    background-image: linear-gradient(180deg, rgb(0, 174, 255), rgb(153, 0, 255));
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1ad1ff; 
+  }
