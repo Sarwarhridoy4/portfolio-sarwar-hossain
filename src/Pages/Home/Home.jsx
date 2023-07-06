@@ -1,3 +1,4 @@
+import Github from "./GitHub/Github";
 import Hero from "./Hero/Hero";
 import Skills from "./Skills/Skills";
 
@@ -6,7 +7,8 @@ const Home = () => {
     <div className=''>
       <div className=''>
         <Hero />
-        <Skills/>
+        <Skills />
+        <Github/>
       </div>
     </div>
   );
