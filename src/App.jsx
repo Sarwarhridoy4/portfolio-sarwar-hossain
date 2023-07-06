@@ -3,7 +3,7 @@ import router from "./Router/routes";
 
 const App = () => {
   return (
-    <div>
+    <div className="max-w-[1240px] font-poppins text-white text-[16px]">
       <RouterProvider router={router}/>
     </div>
   );
