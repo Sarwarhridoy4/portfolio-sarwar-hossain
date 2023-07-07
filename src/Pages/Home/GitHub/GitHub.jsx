@@ -20,11 +20,18 @@ const Github = () => {
         className='flex flex-col gap-7 items-center justify-center'
       >
         <img
-          src={`https://github-readme-streak-stats.herokuapp.com/?user=${import.meta.env.VITE_USERNAME}`}
+          src={`https://github-readme-streak-stats.herokuapp.com/?user=${
+            import.meta.env.VITE_USERNAME
+          }`}
           alt=''
-              />
-              
-              <img src={`https://github-readme-stats.vercel.app/api/top-langs?username=${import.meta.env.VITE_USERNAME}`} alt="" />
+        />
+
+        <img
+          src={`https://github-readme-stats.vercel.app/api/top-langs?username=${
+            import.meta.env.VITE_USERNAME
+          }`}
+          alt=''
+        />
       </div>
     </div>
   );
