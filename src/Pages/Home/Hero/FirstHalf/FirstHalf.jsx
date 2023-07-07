@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import downloadFileFromGoogleDrive from "../../../../utils/Dwonload";
+import { Link } from "react-router-dom";
 const FirstHalf = () => {
   const googleDriveLink = `https://drive.google.com/file/d/${
     import.meta.env.VITE_SECRETLINK
@@ -39,6 +40,7 @@ const FirstHalf = () => {
           >
             Resume
           </motion.button>
+          <Link to='/contact-me'>
           <motion.button
             whileHover={{
               scale: 1.2,
@@ -50,6 +52,7 @@ const FirstHalf = () => {
           >
             contact me
           </motion.button>
+          </Link>
         </div>
       </div>
     </div>
