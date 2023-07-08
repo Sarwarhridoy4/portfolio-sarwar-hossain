@@ -32,6 +32,12 @@ const Github = () => {
           }`}
           alt=''
         />
+        <img
+          src={`https://github-readme-stats.vercel.app/api?username=${
+            import.meta.env.VITE_USERNAME
+          }&show_icons=true&locale=en`}
+          alt=''
+        />
       </div>
     </div>
   );
