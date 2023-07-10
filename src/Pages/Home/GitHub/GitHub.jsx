@@ -4,9 +4,7 @@ const Github = () => {
   return (
     <div>
       <motion.div
-        data-aos='flip-right'
-        data-aos-easing='linear'
-        data-aos-duration='1500'
+        
         className='my-10'
       >
         <h1 className='text-[20px] text-center md:text-[30px] lg:text-[40px] font-semibold bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-green-500'>
@@ -14,9 +12,7 @@ const Github = () => {
         </h1>
       </motion.div>
       <div
-        data-aos='flip-right'
-        data-aos-easing='linear'
-        data-aos-duration='1500'
+        
         className='flex flex-col gap-7 items-center justify-center'
       >
         <img

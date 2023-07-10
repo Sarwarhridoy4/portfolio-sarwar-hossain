@@ -2,7 +2,7 @@ const Contact = () => {
   const myform = document.getElementById("myForm");
   return (
     <>
-      <section className='bg-[#1D232A] py-20 lg:py-[120px] overflow-hidden relative z-10'>
+      <section className='bg-transparent py-20 lg:py-[120px] overflow-hidden relative z-10'>
         <div className='container'>
           <div className='flex flex-wrap -mx-4 lg:justify-between'>
             <div className='w-full px-4 lg:w-1/2 xl:w-6/12'>
@@ -82,14 +82,14 @@ const Contact = () => {
               </div>
             </div>
             <div className='w-full px-4 lg:w-1/2 xl:w-5/12'>
-              <div
-                data-aos='flip-left'
-                data-aos-easing='ease-out-cubic'
-                data-aos-duration='2000'
-                className='relative p-8 bg-slate-900 rounded-lg shadow-lg sm:p-12'
-              >
-                <form id='myForm' action={`https://formbold.com/s/${import.meta.env.VITE_FORMKEY}`} method='POST'
-                onSubmit={()=>myform.reset()}
+              <div className='relative p-8 bg-slate-900 rounded-lg shadow-lg sm:p-12'>
+                <form
+                  id='myForm'
+                  action={`https://formbold.com/s/${
+                    import.meta.env.VITE_FORMKEY
+                  }`}
+                  method='POST'
+                  onSubmit={() => myform.reset()}
                 >
                   <ContactInputBox
                     type='text'

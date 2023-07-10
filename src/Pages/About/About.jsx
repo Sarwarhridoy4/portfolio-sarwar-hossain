@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div className='overflow-hidden'>
       <div
-        data-aos='fade-right'
+        
         className='w-full min-h-screen flex flex-col items-center justify-center gap-20'
       >
         <h2 className='text-5xl font-semibold'>Who I am</h2>
@@ -61,7 +61,7 @@ const About = () => {
         </div>
       </div>
       <div
-        data-aos='fade-left'
+        
         className='w-full min-h-screen flex flex-col items-center justify-center'
       >
         <h2 className='text-5xl font-semibold'>Overview</h2>
@@ -94,7 +94,7 @@ const About = () => {
         </div>
       </div>
       <div
-        data-aos='fade-right'
+        
         className='w-full min-h-screen flex flex-col items-center justify-center'
       >
         <h2 className='text-5xl font-semibold'>Education</h2>
@@ -146,7 +146,7 @@ const About = () => {
         </div>
       </div>
       <div
-        data-aos='fade-left'
+        
         className='w-full min-h-screen flex flex-col items-center justify-center'
       >
         <h2 className='text-5xl font-semibold'>Connect With Me</h2>

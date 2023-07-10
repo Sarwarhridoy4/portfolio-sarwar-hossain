@@ -16,18 +16,14 @@ import figma from "../../../assets/skills/figma.svg";
 const Skills = () => {
   return (
     <motion.div
-      data-aos='fade-down'
-      data-aos-easing='linear'
-      data-aos-duration='1500'
-      className='min-h-screen'
+    
+      className=''
     >
       <h1 className='text-[20px] text-center md:text-[30px] lg:text-[40px] font-semibold bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-green-500'>
         Skills I have
       </h1>
       <motion.div
-        data-aos='fade-down'
-        data-aos-easing='linear'
-        data-aos-duration='1500'
+        
         className='w-4/5 mx-auto my-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2'
       >
         <motion.div className='stack w-40 h-40 flex flex-col items-center justify-center border border-dashed border-sky-500'>
