@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import click from "../../../src/assets/sound-effect/click.mp3";
+import error from "../../assets/Animation/Error404.json" 
+import Lottie from "lottie-react"
 const Error = () => {
   const audio = new Audio();
   audio.src = click;
   return (
     <div className='w-full min-h-screen flex flex-col items-center justify-center gap-3'>
-      <h1 className="text-3xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 animate-bounce ">404</h1>
-      <p className="text-2xl">Opps!</p>
-      <p className="text-2xl">Page Not Found!</p>
+      <Lottie animationData={error} loop={true} className="w-[30%]" />
+      <p className="text-2xl md:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-pink-500 animate-bounce">Page Not Found!</p>
       <Link to='/'>
       <motion.button
               whileHover={{
