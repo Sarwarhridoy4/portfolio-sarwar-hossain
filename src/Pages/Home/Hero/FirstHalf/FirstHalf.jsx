@@ -3,6 +3,7 @@ import Typewriter from "typewriter-effect";
 import downloadFileFromGoogleDrive from "../../../../utils/Dwonload";
 import click from "../../../../assets/sound-effect/click.mp3";
 import { Link } from "react-router-dom";
+import { AttentionSeeker } from "react-awesome-reveal";
 const FirstHalf = () => {
   const googleDriveLink = `https://drive.google.com/file/d/${
     import.meta.env.VITE_SECRETLINK
@@ -35,6 +36,7 @@ const FirstHalf = () => {
       </p>
       <div className='w-full mx-auto'>
         <div className='flex flex-col md:flex-row gap-3 items-center justify-between my-20'>
+          <AttentionSeeker effect="heartBeat">
           <motion.button
             onClick={() => {
               downloadFileFromGoogleDrive(googleDriveLink);
@@ -46,6 +48,7 @@ const FirstHalf = () => {
           >
             Resume
           </motion.button>
+          </AttentionSeeker>
           <Link to='/contact-me'>
             <motion.button
               whileHover={{

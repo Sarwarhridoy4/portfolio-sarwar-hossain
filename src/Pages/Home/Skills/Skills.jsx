@@ -13,7 +13,7 @@ import Vite from "../../../assets/skills/vite.svg";
 import PhotoShop from "../../../assets/skills/photoshop.svg";
 import illustrator from "../../../assets/skills/illustrator.svg";
 import figma from "../../../assets/skills/figma.svg";
-import { Slide } from "react-awesome-reveal";
+import { AttentionSeeker, Slide } from "react-awesome-reveal";
 const Skills = () => {
   return (
     <Slide duration={2000} triggerOnce>
@@ -23,27 +23,33 @@ const Skills = () => {
         </h1>
         <motion.div className='w-4/5 mx-auto my-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2'>
           <motion.div className='stack w-40 h-40 flex flex-col items-center justify-center border border-dashed border-sky-500'>
-            <img
-              src={html}
-              alt=''
-              className='w-[80%] hover:animate-pulse hover:cursor-pointer'
-            />
+            <AttentionSeeker effect='jello'>
+              <img
+                src={html}
+                alt=''
+                className='w-[80%] hover:animate-pulse hover:cursor-pointer'
+              />
+            </AttentionSeeker>
             HTML
           </motion.div>
           <motion.div className='stack w-40 h-40 flex flex-col items-center justify-center border border-dashed border-sky-500'>
-            <img
-              src={css}
-              alt=''
-              className='w-[80%] hover:animate-pulse hover:cursor-pointer'
-            />
+            <AttentionSeeker effect='jello'>
+              <img
+                src={css}
+                alt=''
+                className='w-[80%] hover:animate-pulse hover:cursor-pointer'
+              />
+            </AttentionSeeker>
             CSS
           </motion.div>
           <motion.div className='stack w-40 h-40 flex flex-col items-center justify-center border border-dashed border-sky-500'>
-            <img
-              src={js}
-              alt=''
-              className='w-[80%] hover:animate-pulse hover:cursor-pointer'
-            />
+            <AttentionSeeker effect='jello'>
+              <img
+                src={js}
+                alt=''
+                className='w-[80%] hover:animate-pulse hover:cursor-pointer'
+              />
+            </AttentionSeeker>
             JavaScript
           </motion.div>
           <motion.div className='stack w-40 h-40 flex flex-col items-center justify-center border border-dashed border-sky-500'>
@@ -55,83 +61,103 @@ const Skills = () => {
             ReactJs
           </motion.div>
           <motion.div className='stack w-40 h-40 flex flex-col items-center justify-center border border-dashed border-sky-500'>
-            <img
-              src={node}
-              alt=''
-              className='w-[80%] hover:animate-pulse hover:cursor-pointer'
-            />
+            <AttentionSeeker effect='jello'>
+              <img
+                src={node}
+                alt=''
+                className='w-[80%] hover:animate-pulse hover:cursor-pointer'
+              />
+            </AttentionSeeker>
             NodeJs
           </motion.div>
           <motion.div className='stack w-40 h-40 flex flex-col items-center justify-center border border-dashed border-sky-500'>
-            <img
-              src={tailwind}
-              alt=''
-              className='w-[80%] hover:animate-pulse hover:cursor-pointer'
-            />
+            <AttentionSeeker effect='jello'>
+              <img
+                src={tailwind}
+                alt=''
+                className='w-[80%] hover:animate-pulse hover:cursor-pointer'
+              />
+            </AttentionSeeker>
             Tailwind-Css
           </motion.div>
           <motion.div className='stack w-40 h-40 flex flex-col items-center justify-center border border-dashed border-sky-500'>
-            <img
-              src={git}
-              alt=''
-              className='w-[80%] hover:animate-pulse hover:cursor-pointer'
-            />
+            <AttentionSeeker effect='jello'>
+              <img
+                src={git}
+                alt=''
+                className='w-[80%] hover:animate-pulse hover:cursor-pointer'
+              />
+            </AttentionSeeker>
             Git
           </motion.div>
           <motion.div className='stack w-40 h-40 flex flex-col items-center justify-center border border-dashed border-sky-500'>
-            <img
-              src={github}
-              alt=''
-              className='w-[80%] hover:animate-pulse hover:cursor-pointer'
-            />
+            <AttentionSeeker effect='jello'>
+              <img
+                src={github}
+                alt=''
+                className='w-[80%] hover:animate-pulse hover:cursor-pointer'
+              />
+            </AttentionSeeker>
             GitHub
           </motion.div>
           <motion.div className='stack w-40 h-40 flex flex-col items-center justify-center border border-dashed border-sky-500'>
-            <img
-              src={bootstrap}
-              alt=''
-              className='w-[80%] hover:animate-pulse hover:cursor-pointer'
-            />
+            <AttentionSeeker effect='jello'>
+              <img
+                src={bootstrap}
+                alt=''
+                className='w-[80%] hover:animate-pulse hover:cursor-pointer'
+              />
+            </AttentionSeeker>
             BootStrap-5
           </motion.div>
           <motion.div className='stack w-40 h-40 flex flex-col items-center justify-center border border-dashed border-sky-500'>
-            <img
-              src={Vite}
-              alt=''
-              className='w-[80%] hover:animate-pulse hover:cursor-pointer'
-            />
+            <AttentionSeeker effect='jello'>
+              <img
+                src={Vite}
+                alt=''
+                className='w-[80%] hover:animate-pulse hover:cursor-pointer'
+              />
+            </AttentionSeeker>
             Vite
           </motion.div>
           <motion.div className='stack w-40 h-40 flex flex-col items-center justify-center border border-dashed border-sky-500'>
-            <img
-              src={sass}
-              alt=''
-              className='w-[80%] hover:animate-pulse hover:cursor-pointer'
-            />
+            <AttentionSeeker effect='jello'>
+              <img
+                src={sass}
+                alt=''
+                className='w-[80%] hover:animate-pulse hover:cursor-pointer'
+              />
+            </AttentionSeeker>
             SaSS
           </motion.div>
           <motion.div className='stack w-40 h-40 flex flex-col items-center justify-center border border-dashed border-sky-500'>
-            <img
-              src={PhotoShop}
-              alt=''
-              className='w-[80%] hover:animate-pulse hover:cursor-pointer'
-            />
+            <AttentionSeeker effect='jello'>
+              <img
+                src={PhotoShop}
+                alt=''
+                className='w-[80%] hover:animate-pulse hover:cursor-pointer'
+              />
+            </AttentionSeeker>
             PhotoShop
           </motion.div>
           <motion.div className='stack w-40 h-40 flex flex-col items-center justify-center border border-dashed border-sky-500'>
-            <img
-              src={illustrator}
-              alt=''
-              className='w-[80%] hover:animate-pulse hover:cursor-pointer'
-            />
+            <AttentionSeeker effect='jello'>
+              <img
+                src={illustrator}
+                alt=''
+                className='w-[80%] hover:animate-pulse hover:cursor-pointer'
+              />
+            </AttentionSeeker>
             Illustrator
           </motion.div>
           <motion.div className='stack w-40 h-40 flex flex-col items-center justify-center border border-dashed border-sky-500'>
-            <img
-              src={figma}
-              alt=''
-              className='w-[80%] hover:animate-pulse hover:cursor-pointer'
-            />
+            <AttentionSeeker effect='jello'>
+              <img
+                src={figma}
+                alt=''
+                className='w-[80%] hover:animate-pulse hover:cursor-pointer'
+              />
+            </AttentionSeeker>
             Figma
           </motion.div>
         </motion.div>

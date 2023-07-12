@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import click from "../../../src/assets/sound-effect/click.mp3";
 import error from "../../assets/Animation/Error404.json" 
 import Lottie from "lottie-react"
+import { AttentionSeeker } from "react-awesome-reveal";
 const Error = () => {
   const audio = new Audio();
   audio.src = click;
@@ -11,7 +12,8 @@ const Error = () => {
       <Lottie animationData={error} loop={true} className="w-[30%]" />
       <p className="text-2xl md:text-4xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-pink-500 animate-bounce">Page Not Found!</p>
       <Link to='/'>
-      <motion.button
+        <AttentionSeeker effect="shake">
+        <motion.button
               whileHover={{
                 scale: 1.2,
               }}
@@ -23,6 +25,7 @@ const Error = () => {
             >
               Back Home
             </motion.button>
+      </AttentionSeeker>
       </Link>
     </div>
   );
