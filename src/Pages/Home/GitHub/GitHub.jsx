@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
+import { Slide } from "react-awesome-reveal";
 
 const Github = () => {
   return (
     <div>
+      <Slide duration={3000} direction="right" triggerOnce>
       <motion.div
         
         className='my-10'
@@ -11,6 +13,7 @@ const Github = () => {
           Git Hub Stats
         </h1>
       </motion.div>
+      
       <div
         
         className='flex flex-col gap-7 items-center justify-center'
@@ -35,6 +38,7 @@ const Github = () => {
           alt=''
         />
       </div>
+    </Slide>
     </div>
   );
 };

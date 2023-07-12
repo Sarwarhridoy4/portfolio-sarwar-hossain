@@ -5,6 +5,7 @@ import insta from "../../assets/scocial/instagram.svg";
 import linkedin from "../../assets/scocial/linkedin.svg";
 import stack from "../../assets/scocial/stackoverflow.svg";
 import GitHub from "../../assets/scocial/github.svg";
+import { Slide } from "react-awesome-reveal";
 
 const About = () => {
   return (
@@ -145,6 +146,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <Slide direction="left">
       <div
         
         className='w-full min-h-screen flex flex-col items-center justify-center'
@@ -208,6 +210,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      </Slide>
     </div>
   );
 };
