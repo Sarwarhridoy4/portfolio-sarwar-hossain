@@ -65,7 +65,7 @@ const Header = () => {
   ];
 
   return (
-    <div className='btm-nav bg-transparent z-50'>
+    <div className='btm-nav bg-transparent backdrop-blur-2xl z-50'>
       {Navs?.map((nav, i) => (
         <Link key={i} to={nav?.link}>
           <button
