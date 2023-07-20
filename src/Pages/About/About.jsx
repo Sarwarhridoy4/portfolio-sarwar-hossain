@@ -1,5 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
-import myself from "../../assets/sarwar.png";
+import myself from "../../assets/sarwar-about.png";
 import facebook from "../../assets/scocial/facebook.svg";
 import insta from "../../assets/scocial/instagram.svg";
 import linkedin from "../../assets/scocial/linkedin.svg";
@@ -15,7 +15,7 @@ const About = () => {
         className='w-full min-h-screen flex flex-col items-center justify-center gap-20'
       >
         <h2 className='text-5xl font-semibold'>Who I am</h2>
-        <div className='w-40 h-40 flex items-center justify-center rounded-full border border-gradient-to-r from-sky-500 to-indigo-500 relative'>
+        <div className='w-40 h-40 flex items-center justify-center rounded-full relative'>
           <img
             src={myself}
             alt='my-picture'
