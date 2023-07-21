@@ -21,24 +21,30 @@ const AddProject = () => {
       multiple: true, // Allow multiple image uploads
     });
 
-    const onSubmit = async (data) => {
-        try {
-            const formData = new FormData();
-            formData.append('projectName', data.projectName);
-            formData.append('slogan', data.slogan);
-            formData.append('projectDescription', data.projectDescription);
-            data.images.forEach((image) => formData.append('images', image));
-      
-            const response = await axios.post('https://portfolio-server-sarwarhridoy4.vercel.app/upload-project', formData, {
-              headers: {
-                'Content-Type': 'multipart/form-data',
-              },
-            });
-      
-            console.log(response.data);
-          } catch (error) {
-            console.error('Error submitting form:', error);
-          }
+  const onSubmit = async (data) => {
+    try {
+      const formData = new FormData();
+      formData.append("projectName", data.projectName);
+      formData.append("slogan", data.slogan);
+      formData.append("LiveLink", data.LiveLink);
+      formData.append("gitHubLink", data.gitHubLink);
+      formData.append("projectDescription", data.projectDescription);
+      data.images.forEach((image) => formData.append("images", image));
+
+      const response = await axios.post(
+        "https://portfolio-server-sarwarhridoy4.vercel.app/upload-project",
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+
+      console.log(response.data);
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
     // console.log(data);
     reset();
     // Handle form submission logic here
@@ -88,6 +94,54 @@ const AddProject = () => {
             control={control}
             defaultValue=''
             rules={{ required: "Slogan is required" }}
+            render={({ field, fieldState }) => (
+              <input
+                {...field}
+                type='text'
+                className={`w-full px-4 py-2 rounded border ${
+                  fieldState.invalid ? "border-red-500" : "border-gray-700"
+                } focus:outline-none focus:border-blue-500 bg-gray-900 text-white`}
+              />
+            )}
+          />
+          <p className='text-red-500 text-xs mt-1'>{errors.slogan?.message}</p>
+        </div>
+        <div className='mb-6'>
+          <label
+            htmlFor='LiveLink'
+            className='text-white text-sm font-medium mb-2 block'
+          >
+            Live Link
+          </label>
+          <Controller
+            name='LiveLink'
+            control={control}
+            defaultValue=''
+            rules={{ required: "Live Link is required" }}
+            render={({ field, fieldState }) => (
+              <input
+                {...field}
+                type='text'
+                className={`w-full px-4 py-2 rounded border ${
+                  fieldState.invalid ? "border-red-500" : "border-gray-700"
+                } focus:outline-none focus:border-blue-500 bg-gray-900 text-white`}
+              />
+            )}
+          />
+          <p className='text-red-500 text-xs mt-1'>{errors.slogan?.message}</p>
+        </div>
+        <div className='mb-6'>
+          <label
+            htmlFor='gitHubLink'
+            className='text-white text-sm font-medium mb-2 block'
+          >
+            GitHub Link
+          </label>
+          <Controller
+            name='gitHubLink'
+            control={control}
+            defaultValue=''
+            rules={{ required: "GitHub Link is required" }}
             render={({ field, fieldState }) => (
               <input
                 {...field}
@@ -150,7 +204,61 @@ const AddProject = () => {
                 ))}
               </ul>
             ) : (
-              <p>Drag `n` drop some files here, or click to select files</p>
+              <div className='flex items-center justify-center'>
+                <svg
+                  width='64px'
+                  height='64px'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'
+                  stroke='#55d9e2'
+                >
+                  <g id='SVGRepo_bgCarrier' strokeWidth='0'></g>
+                  <g
+                    id='SVGRepo_tracerCarrier'
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                  ></g>
+                  <g id='SVGRepo_iconCarrier'>
+                    {" "}
+                    <path
+                      d='M7 11C8.10457 11 9 10.1046 9 9C9 7.89543 8.10457 7 7 7C5.89543 7 5 7.89543 5 9C5 10.1046 5.89543 11 7 11Z'
+                      stroke='#43c3f9'
+                      strokeWidth='1.5'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                    ></path>{" "}
+                    <path
+                      d='M5.56055 21C11.1305 11.1 15.7605 9.35991 21.0005 15.7899'
+                      stroke='#43c3f9'
+                      strokeWidth='1.5'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                    ></path>{" "}
+                    <path
+                      d='M12.28 3H5C3.93913 3 2.92172 3.42136 2.17157 4.17151C1.42142 4.92165 1 5.93913 1 7V17C1 18.0609 1.42142 19.0782 2.17157 19.8284C2.92172 20.5785 3.93913 21 5 21H17C18.0609 21 19.0783 20.5785 19.8284 19.8284C20.5786 19.0782 21 18.0609 21 17V12'
+                      stroke='#43c3f9'
+                      strokeWidth='1.5'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                    ></path>{" "}
+                    <path
+                      d='M18.75 8.82996V0.829956'
+                      stroke='#43c3f9'
+                      strokeWidth='1.5'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                    ></path>{" "}
+                    <path
+                      d='M15.5508 4.02996L18.7508 0.829956L21.9508 4.02996'
+                      stroke='#43c3f9'
+                      strokeWidth='1.5'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                    ></path>{" "}
+                  </g>
+                </svg>
+              </div>
             )}
           </div>
         </div>
