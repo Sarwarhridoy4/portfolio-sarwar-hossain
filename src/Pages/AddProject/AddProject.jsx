@@ -32,7 +32,7 @@ const AddProject = () => {
       data.images.forEach((image) => formData.append("images", image));
 
       const response = await axios.post(
-        "https://portfolio-server-sarwarhridoy4.vercel.app/upload-project",
+        "https://portfolio-server-weld.vercel.app/upload-project",
         formData,
         {
           headers: {
