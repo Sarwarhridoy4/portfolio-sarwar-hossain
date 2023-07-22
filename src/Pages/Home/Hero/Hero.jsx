@@ -11,8 +11,10 @@ const Hero = () => {
   useEffect(() => {
     async function fetchRandomQuote() {
       try {
-        const response = await axios.get("https://api.quotable.io/quotes/random");
-        setQuote (response.data);
+        const response = await axios.get(
+          "https://api.quotable.io/quotes/random"
+        );
+        setQuote(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -20,9 +22,8 @@ const Hero = () => {
     fetchRandomQuote();
     setTimeout(() => {
       fetchRandomQuote();
-    },60000)
+    }, 60000);
   }, [setQuote]);
-  console.log(qoute);
 
   return (
     <Slide direction='right' duration={2000} triggerOnce>
@@ -31,7 +32,8 @@ const Hero = () => {
           <div className='w-full absolute top-5 h-10 backdrop-blur-2xl hidden md:block'>
             <span>
               <Marquee pauseOnHover speed={50}>
-                <q>{qoute?.[0].content}</q> <span>-</span><span>{qoute?.[0].author }</span>
+                <q>{qoute?.[0].content}</q> <span>-</span>
+                <span>{qoute?.[0].author}</span>
               </Marquee>
             </span>
           </div>
