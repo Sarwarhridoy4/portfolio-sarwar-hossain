@@ -10,7 +10,7 @@ const EachProject = ({ project }) => {
     projectDescription,
     images,
   } = project;
-  console.log(project);
+  
   return (
     <div>
       <div className='card'>

@@ -28,7 +28,7 @@ const Hero = () => {
     <Slide direction='right' duration={2000} triggerOnce>
       <div className='w-[80vw] min-h-screen mx-auto grid grid-cols-12 relative'>
         <div className='flex items-center justify-center md:justify-start col-span-full md:col-span-6 md:my-4'>
-          <div className='w-full absolute top-5 h-10 backdrop-blur-2xl'>
+          <div className='w-full absolute top-5 h-10 backdrop-blur-2xl hidden md:block'>
             <span>
               <Marquee pauseOnHover speed={50}>
                 <q>{qoute?.[0].content}</q> <span>-</span><span>{qoute?.[0].author }</span>
