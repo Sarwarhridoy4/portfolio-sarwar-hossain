@@ -2,10 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layouts/Main/Main";
 import Error from "../Pages/Error/Error";
 import Home from "../Pages/Home/Home";
-// import Projects from "../Pages/Preojects/Projects";
+import Projects from "../Pages/Preojects/Projects";
 import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
-import UnderConsrtuction from "../components/UnderConstuction/UnderConsrtuction";
 import AddProject from "../Pages/AddProject/AddProject";
 
 const router = createBrowserRouter([
@@ -20,7 +19,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/projects",
-        element: <UnderConsrtuction />,
+        element: <Projects />,
       },
       {
         path: "/contact-me",
@@ -29,10 +28,11 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
-      }, {
-        path: '/add-project',
-        element:<AddProject/>
-      }
+      },
+      {
+        path: "/add-project",
+        element: <AddProject />,
+      },
     ],
   },
 ]);

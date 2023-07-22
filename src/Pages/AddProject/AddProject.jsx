@@ -1,8 +1,11 @@
 import axios from "axios";
 import { useDropzone } from "react-dropzone";
 import { useForm, Controller } from "react-hook-form";
+import { toast } from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 const AddProject = () => {
+  const navigate = useNavigate();
   const {
     handleSubmit,
     control,
@@ -41,9 +44,13 @@ const AddProject = () => {
         }
       );
 
-      console.log(response.data);
+      if (response.data) {
+        navigate("/projects");
+        toast.success("Project upload Success!");
+      }
     } catch (error) {
       console.error("Error submitting form:", error);
+      toast.error(error?.message);
     }
     // console.log(data);
     reset();

@@ -4,6 +4,7 @@ import router from "./Router/routes";
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
 import Particles from "react-particles";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -615,6 +616,7 @@ const App = () => {
       />
       <div className='max-w-[1240px] font-poppins text-white text-[16px] w-[90vw] mx-auto grid grid-cols-12'>
         <div className='col-span-full'>
+          <Toaster/>
           <RouterProvider router={router} />
         </div>
       </div>
