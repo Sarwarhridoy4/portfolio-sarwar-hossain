@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import EachProject from "./EachProject/EachProject";
+import loading from "../../assets/Animation/loading.json"
+import Lottie from "lottie-react";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -25,10 +27,8 @@ const Projects = () => {
       <div className='my-8'>
         <div className='flex flex-col md:flex-row gap-5'>
           {projects?.length === 0 ? (
-            <div className='col-span-full'>
-              <p className='text-white text-center text-3xl'>
-                You havent Added Any project yet.{" "}
-              </p>
+            <div className='col-span-full w-full h-screen flex items-center justify-center'>
+              <Lottie animationData={loading} className="w-[40%]" />
             </div>
           ) : (
             <div className="w-4/5 mx-auto flex items-center justify-center flex-col md:flex-row gap-3 flex-wrap">
