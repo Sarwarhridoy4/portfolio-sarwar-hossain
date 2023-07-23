@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   const [active, setActive] = useState(false);
-  console.log("sate:", active);
   const Navs = [
     {
       img: (
