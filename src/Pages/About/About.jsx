@@ -5,15 +5,13 @@ import insta from "../../assets/scocial/instagram.svg";
 import linkedin from "../../assets/scocial/linkedin.svg";
 import stack from "../../assets/scocial/stackoverflow.svg";
 import GitHub from "../../assets/scocial/github.svg";
+import Discord from "../../assets/scocial/discord.svg";
 import { Slide } from "react-awesome-reveal";
 
 const About = () => {
   return (
     <div className='overflow-hidden'>
-      <div
-        
-        className='w-full min-h-screen flex flex-col items-center justify-center gap-20'
-      >
+      <div className='w-full min-h-screen flex flex-col items-center justify-center gap-20'>
         <h2 className='text-5xl font-semibold'>Who I am</h2>
         <div className='w-40 h-40 flex items-center justify-center rounded-full relative'>
           <img
@@ -61,10 +59,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div
-        
-        className='w-full min-h-screen flex flex-col items-center justify-center'
-      >
+      <div className='w-full min-h-screen flex flex-col items-center justify-center'>
         <h2 className='text-5xl font-semibold'>Overview</h2>
         <div className='w-full my-9'>
           <div className='mockup-window border bg-base-300'>
@@ -94,10 +89,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div
-        
-        className='w-full min-h-screen flex flex-col items-center justify-center'
-      >
+      <div className='w-full min-h-screen flex flex-col items-center justify-center'>
         <h2 className='text-5xl font-semibold'>Education</h2>
         <div className='w-full my-9'>
           <div className='mockup-code'>
@@ -146,70 +138,76 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Slide direction="left">
-      <div
-        
-        className='w-full min-h-screen flex flex-col items-center justify-center'
-      >
-        <h2 className='text-5xl font-semibold'>Connect With Me</h2>
+      <Slide direction='left'>
+        <div className='w-full min-h-screen flex flex-col items-center justify-center'>
+          <h2 className='text-5xl font-semibold'>Connect With Me</h2>
 
-        <div className='my-9'>
-          <div className='mockup-phone border-primary'>
-            <div className='camera'></div>
-            <div className='display'>
-              <div className='artboard artboard-demo phone-1'>
-                <div className='w-full overflow-auto flex flex-col items-center justify-center gap-5'>
-                  <div className='w-12 h-12 rounded-lg bg-white'>
-                    <a
-                      href='https://www.facebook.com/sarwarhridoy4/'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <img src={facebook} alt='' />
-                    </a>
-                  </div>
-                  <div className='w-12 h-12 rounded-lg bg-white'>
-                    <a
-                      href='https://www.instagram.com/sarwarhridoy04/'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <img src={insta} alt='' />
-                    </a>
-                  </div>
-                  <div className='w-12 h-12 rounded-lg bg-white'>
-                    <a
-                      href='https://www.linkedin.com/in/sarwar-hridoy4/'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <img src={linkedin} alt='' />
-                    </a>
-                  </div>
-                  <div className='w-12 h-12 rounded-lg bg-white'>
-                    <a
-                      href='https://stackoverflow.com/users/19937858/sarwar-hossain'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <img src={stack} alt='' />
-                    </a>
-                  </div>
-                  <div className='w-12 h-12 rounded-lg bg-white'>
-                    <a
-                      href='https://github.com/Sarwarhridoy4'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <img src={GitHub} alt='' />
-                    </a>
+          <div className='my-9'>
+            <div className='mockup-phone border-primary'>
+              <div className='camera'></div>
+              <div className='display'>
+                <div className='artboard artboard-demo phone-1'>
+                  <div className='w-full overflow-auto flex flex-col items-center justify-center gap-5'>
+                    <div className='w-12 h-12 rounded-lg bg-white'>
+                      <a
+                        href='https://www.facebook.com/sarwarhridoy4/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        <img src={facebook} alt='' />
+                      </a>
+                    </div>
+                    <div className='w-12 h-12 rounded-lg bg-white'>
+                      <a
+                        href='https://www.instagram.com/sarwarhridoy04/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        <img src={insta} alt='' />
+                      </a>
+                    </div>
+                    <div className='w-12 h-12 rounded-lg bg-white'>
+                      <a
+                        href='https://www.linkedin.com/in/sarwar-hridoy4/'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        <img src={linkedin} alt='' />
+                      </a>
+                    </div>
+                    <div className='w-12 h-12 rounded-lg bg-white'>
+                      <a
+                        href='https://stackoverflow.com/users/19937858/sarwar-hossain'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        <img src={stack} alt='' />
+                      </a>
+                    </div>
+                    <div className='w-12 h-12 rounded-lg bg-white'>
+                      <a
+                        href='https://github.com/Sarwarhridoy4'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        <img src={GitHub} alt='' />
+                      </a>
+                    </div>
+                    <div className='w-12 h-12 rounded-lg bg-white'>
+                      <a
+                        href='https://discord.com/users/981127290484314122'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        <img src={Discord} alt='' />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       </Slide>
     </div>
   );
