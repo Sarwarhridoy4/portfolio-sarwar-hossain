@@ -1,8 +1,6 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  const [active, setActive] = useState(false);
   const Navs = [
     {
       img: (
@@ -66,16 +64,9 @@ const Header = () => {
   return (
     <div className='btm-nav bg-transparent backdrop-blur-2xl z-50'>
       {Navs?.map((nav, i) => (
-        <Link key={i} to={nav?.link}>
-          <button
-            onClick={() => {
-              setActive(() => setActive(!active));
-            }}
-            className={`text-warning ${active && "active"}`}
-          >
-            {nav?.img}
-          </button>
-        </Link>
+        <NavLink key={i} to={nav?.link}>
+          <button className={`text-warning`}>{nav?.img}</button>
+        </NavLink>
       ))}
     </div>
   );
