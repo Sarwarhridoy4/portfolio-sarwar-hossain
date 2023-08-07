@@ -1,6 +1,6 @@
 import { RouterProvider } from "react-router-dom";
 import router from "./Router/routes";
-
+import AnimatedCursor from "react-animated-cursor"
 import { loadFull } from "tsparticles";
 import { useCallback } from "react";
 import Particles from "react-particles";
@@ -615,7 +615,28 @@ const App = () => {
       />
       <div className='max-w-[1240px] font-poppins text-white text-[16px] w-[90vw] mx-auto grid grid-cols-12'>
         <div className='col-span-full'>
-          <Toaster/>
+          <Toaster />
+          <AnimatedCursor
+      innerSize={16}
+      outerSize={10}
+      color='252, 186, 3'
+      outerAlpha={0.2}
+      innerScale={0.7}
+      outerScale={5}
+      clickables={[
+        'a',
+        'input[type="text"]',
+        'input[type="email"]',
+        'input[type="number"]',
+        'input[type="submit"]',
+        'input[type="image"]',
+        'label[for]',
+        'select',
+        'textarea',
+        'button',
+        '.link'
+      ]}
+    />
           <RouterProvider router={router} />
         </div>
       </div>
