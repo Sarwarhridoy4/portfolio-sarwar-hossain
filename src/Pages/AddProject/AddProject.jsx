@@ -1,4 +1,5 @@
 import axios from "axios";
+import { useState } from "react";
 import { useDropzone } from "react-dropzone";
 import { useForm, Controller } from "react-hook-form";
 import { toast } from "react-hot-toast";
@@ -6,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 const AddProject = () => {
   const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
   const {
     handleSubmit,
     control,
@@ -26,6 +28,7 @@ const AddProject = () => {
 
   const onSubmit = async (data) => {
     try {
+      setLoading(true);
       const formData = new FormData();
       formData.append("projectName", data.projectName);
       formData.append("slogan", data.slogan);
@@ -46,15 +49,15 @@ const AddProject = () => {
 
       if (response.data) {
         navigate("/projects");
+        setLoading(false);
         toast.success("Project upload Success!");
       }
     } catch (error) {
       console.error("Error submitting form:", error);
       toast.error(error?.message);
     }
-    // console.log(data);
+
     reset();
-    // Handle form submission logic here
   };
   return (
     <div className='backdrop-blur-2xl bg-transparent py-10'>
@@ -272,9 +275,10 @@ const AddProject = () => {
 
         <button
           type='submit'
+          disabled={loading}
           className='w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded focus:outline-none'
         >
-          Submit
+          {loading ? "Submiting.." : "Submit"}
         </button>
       </form>
     </div>
