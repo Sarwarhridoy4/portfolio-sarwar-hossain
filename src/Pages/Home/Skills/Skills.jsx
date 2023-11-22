@@ -97,13 +97,13 @@ const Skills = () => {
           {skills?.map((skill, i) => (
             <motion.div
               key={i}
-              className='stack w-40 h-40 flex flex-col items-center justify-center border border-dashed border-sky-500'
+              className='stack w-40 h-40 flex flex-col items-center justify-center border border-dashed border-sky-500 uppercase'
             >
               <AttentionSeeker effect='jello'>
                 <img
                   src={skill?.img}
                   alt={skill?.name}
-                  className='w-[80%] hover:animate-pulse hover:cursor-pointer'
+                  className='w-[80%] hover:animate-pulse hover:cursor-pointer flex items-center justify-center align-content-center'
                 />
               </AttentionSeeker>
               {skill?.name}
