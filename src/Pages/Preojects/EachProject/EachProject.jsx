@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./EachProject.css";
 import live from "../../../assets/scocial/live.svg";
 import gitlive from "../../../assets/scocial/git-live.svg";
@@ -7,7 +8,6 @@ const EachProject = ({ project }) => {
     slogan,
     LiveLink,
     gitHubLink,
-    projectDescription,
     images,
   } = project;
   
