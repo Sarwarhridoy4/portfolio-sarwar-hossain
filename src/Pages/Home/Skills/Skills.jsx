@@ -47,6 +47,10 @@ const Skills = () => {
       img: react,
     },
     {
+      name: "React Native",
+      img: react,
+    },
+    {
       name: "Vite.js",
       img: Vite,
     },
