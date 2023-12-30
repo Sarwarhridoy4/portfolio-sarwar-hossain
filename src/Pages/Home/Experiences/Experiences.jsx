@@ -7,7 +7,7 @@ const Experiences = () => {
       <h1 className='text-[20px] text-center md:text-[30px] lg:text-[40px] font-semibold bg-clip-text text-transparent bg-gradient-to-r from-sky-500 to-green-500'>
         Experiences
       </h1>
-      {/* <!-- component --> */}
+      <div className="w-4/5 mx-auto">
       <Carousel
         showArrows={true}
         emulateTouch={true}
@@ -26,20 +26,20 @@ const Experiences = () => {
             />
           </div>
           <div>
-            <h2 className='text-white text-3xl font-semibold'>
+            <h2 className='text-white text-xl md:text-2xl lg:text-3xl font-semibold'>
               Full-Stack Developer (MERN)
             </h2>
-            <p className='mt-2 text-slate-50'>Company : 3W Private Ltd</p>
-            <p className='mt-2 text-slate-50'>
+            <p className='mt-2 text-slate-50 text-sm md:text-md'>Company : 3W Private Ltd</p>
+            <p className='mt-2 text-slate-50 text-sm md:text-md'>
               Span : Aug 2023 - Present · 5 mos
             </p>
-            <p className='mt-2 text-slate-50'>Location : Greather Noida · Remote</p>
+            <p className='mt-2 text-slate-50 text-sm md:text-md'>Location : Greather Noida · Remote</p>
           </div>
           <div className='flex justify-end mt-4'>
             <a
               href='https://triplewsols.org/'
               target='_blank'
-              className='text-xl font-medium text-indigo-300'
+              className='text-md md:text-xl font-medium text-indigo-300'
             >
               Detailse
             </a>
@@ -55,26 +55,28 @@ const Experiences = () => {
             />
           </div>
           <div>
-            <h2 className='text-white text-3xl font-semibold'>
+            <h2 className='text-white text-xl md:text-2xl lg:text-3xl font-semibold'>
               Full-Stack Developer (MERN)
             </h2>
-            <p className='mt-2 text-slate-50'>Company : Geeks Of Gurukul</p>
-            <p className='mt-2 text-slate-50'>
+            <p className='mt-2 text-slate-50 text-sm md:text-md'>Company : Geeks Of Gurukul</p>
+            <p className='mt-2 text-slate-50 text-sm md:text-md'>
               Span : Apr 2023 - Jun 2023 · 3 mos
             </p>
-            <p className='mt-2 text-slate-50'>Location : Bengluru · Remote</p>
+            <p className='mt-2 text-slate-50 text-sm md:text-md'>Location : Bengluru · Remote</p>
           </div>
           <div className='flex justify-end mt-4'>
             <a
               href='https://www.geeksofgurukul.com/'
               target='_blank'
-              className='text-xl font-medium text-indigo-300'
+              className='text-md md:text-xl font-medium text-indigo-300'
             >
               Detailse
             </a>
           </div>
         </div>
       </Carousel>
+      </div>
+      
     </div>
   );
 };

@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div className='overflow-hidden'>
       <div className='w-full min-h-screen flex flex-col items-center justify-center gap-20'>
-        <h2 className='text-5xl font-semibold'>Who I am</h2>
+        <h2 className='text-2xl md:text-3xl lg:text-5xl font-semibold'>Who I am</h2>
         <div className='w-40 h-40 flex items-center justify-center rounded-full relative'>
           <img
             src={myself}
@@ -60,7 +60,7 @@ const About = () => {
         </div>
       </div>
       <div className='w-full min-h-screen flex flex-col items-center justify-center'>
-        <h2 className='text-5xl font-semibold'>Overview</h2>
+        <h2 className='text-2xl md:text-3xl lg:text-5xl font-semibold'>Overview</h2>
         <div className='w-full my-9'>
           <div className='mockup-window border bg-base-300'>
             <div className='flex items-start justify-start px-8 py-8 bg-base-200'>
@@ -80,7 +80,7 @@ const About = () => {
                 repeat={0}
                 speed={99 | { type: "keyStrokeDelayInMs", value: 5 }}
                 style={{
-                  fontSize: "1.5em",
+                  fontSize: "0.9em",
                   textAlign: "justify",
                   display: "inline-block",
                 }}
@@ -90,7 +90,7 @@ const About = () => {
         </div>
       </div>
       <div className='w-full min-h-screen flex flex-col items-center justify-center'>
-        <h2 className='text-5xl font-semibold'>Education</h2>
+        <h2 className='text-2xl md:text-3xl lg:text-5xl font-semibold'>Education</h2>
         <div className='w-full my-9'>
           <div className='mockup-code'>
             <pre data-prefix='$'>
