@@ -4,7 +4,7 @@ import Footer from "../../Pages/Shared/Footer/Footer";
 
 const Main = () => {
   return (
-    <div className='w-full'>
+    <div className='w-full overflow-x-hidden'>
       <Header />
       <Outlet />
       <Footer />
