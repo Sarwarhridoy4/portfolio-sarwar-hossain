@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
-import downloadFileFromGoogleDrive from "../../../../utils/Dwonload";
 import click from "../../../../assets/sound-effect/click.mp3";
 import { Link } from "react-router-dom";
 import { AttentionSeeker } from "react-awesome-reveal";
 import { useState } from "react";
+import {
+  downloadAppFromGoogleDrive,
+  downloadFileFromGoogleDrive,
+} from "../../../../utils/Dwonload";
 const FirstHalf = () => {
   const [selectedRole, setSelectedRole] = useState("Select Role");
   const MernLink = `https://drive.google.com/file/d/${
@@ -16,6 +19,11 @@ const FirstHalf = () => {
   const NodeLink = `https://drive.google.com/file/d/${
     import.meta.env.VITE_SECRETLINK_NODE
   }/view?usp=sharing`;
+  // Example usage
+  const appDriveLink = `https://drive.google.com/file/d/${
+    import.meta.env.VITE_SECRETLINK_APP
+  }/view?usp=sharing`;
+
   const audio = new Audio();
   audio.src = click;
   const handleRoleChange = (event) => {
@@ -106,6 +114,21 @@ const FirstHalf = () => {
               contact me
             </motion.button>
           </Link>
+          <motion.button
+            whileHover={{
+              scale: 1.2,
+            }}
+            whileTap={{
+              scale: 1.1,
+            }}
+            className='uppercase w-40 h-10 bg-fuchsia-600 hover:rounded-full hover:transition-500 hover:bg-gradient-to-r from-sky-500 to-indigo-500'
+            onClick={() => {
+              audio.play();
+              downloadAppFromGoogleDrive(appDriveLink);
+            }}
+          >
+            get app
+          </motion.button>
         </div>
       </div>
     </div>
