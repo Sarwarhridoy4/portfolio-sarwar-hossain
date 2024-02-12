@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import options from "./utils/option";
 // import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
@@ -8,6 +8,7 @@ import { Toaster } from "react-hot-toast";
 import AnimatedCursor from "react-animated-cursor";
 import { RouterProvider } from "react-router-dom";
 import router from "./Router/routes";
+import SuspensePage from "./Pages/Suspense/Suspense";
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
 const App = () => {
@@ -34,7 +35,7 @@ const App = () => {
 
   if (init) {
     return (
-      <>
+      <Suspense fallback={<SuspensePage />}>
         <Particles
           id='tsparticles'
           particlesLoaded={particlesLoaded}
@@ -67,7 +68,7 @@ const App = () => {
             <RouterProvider router={router} />
           </div>
         </div>
-      </>
+      </Suspense>
     );
   }
 
