@@ -57,7 +57,13 @@ const FirstHalf = () => {
         <div className='bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 inline-block'>
           <Typewriter
             options={{
-              strings: ["React", "Front-End", "BackEnd", "Full-Stack(MERN)"],
+              strings: [
+                "React",
+                "Front-End",
+                "BackEnd",
+                "React-Native",
+                "Full-Stack(MERN)",
+              ],
               autoStart: true,
               loop: true,
             }}
