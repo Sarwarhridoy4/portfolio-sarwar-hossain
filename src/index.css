@@ -29,3 +29,6 @@ html {
   ::-webkit-scrollbar-thumb:hover {
     background: #1ad1ff; 
   }
+  .carousel-status{
+    display: none !important;
+  }
