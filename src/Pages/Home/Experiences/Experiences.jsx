@@ -1,6 +1,7 @@
-import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import gog from "../../../assets/Experiences/GOG.png";
+import tripplew from "../../../assets/Experiences/3w.png";
 const Experiences = () => {
   return (
     <div className='w-full flex items-center justify-center flex-col my-10'>
@@ -21,7 +22,7 @@ const Experiences = () => {
           <div className='max-w-md mx-auto py-4 px-8 bg-violet-800 shadow-lg rounded-lg my-20'>
             <div className='w-20 h-20 bg-violet-700 rounded-full flex items-center justify-center align-middle'>
               <img
-                src='https://media.licdn.com/dms/image/C4E0BAQE1kc6jRFNKBw/company-logo_200_200/0/1645964480832/triple_w_solutions_logo?e=1712188800&v=beta&t=-jAFNqFcw2itxQFEoTMSsbKouLPun5iADylPIRFn85U'
+                src={tripplew}
                 alt='company_logo_3w'
                 className='w-full rounded-full'
               />
@@ -45,6 +46,7 @@ const Experiences = () => {
                 href='https://triplewsols.org/'
                 target='_blank'
                 className='text-md md:text-xl font-medium text-indigo-300'
+                rel='noreferrer'
               >
                 Detailse
               </a>
@@ -54,7 +56,7 @@ const Experiences = () => {
           <div className='max-w-md mx-auto py-4 px-8 bg-violet-800 shadow-lg rounded-lg my-20'>
             <div className='w-20 h-20 bg-violet-700 rounded-full flex items-center justify-center align-middle'>
               <img
-                src='https://media.licdn.com/dms/image/D560BAQEPp7a6W9ZKbQ/company-logo_100_100/0/1682100332658/geeks_of_gurukul_logo?e=1712188800&v=beta&t=HOahWKldc9KaBKFZKtxj5A5Fw3l0UdfEpTHESihI0Q4'
+                src={gog}
                 alt='company_logo_geeks_of_gurukul'
                 className='w-full rounded-full'
               />
@@ -78,6 +80,7 @@ const Experiences = () => {
                 href='https://www.geeksofgurukul.com/'
                 target='_blank'
                 className='text-md md:text-xl font-medium text-indigo-300'
+                rel='noreferrer'
               >
                 Detailse
               </a>
