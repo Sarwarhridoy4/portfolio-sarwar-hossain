@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import EachProject from "./EachProject/EachProject";
 import loading from "../../assets/Animation/loading.json"
 import Lottie from "lottie-react";
+import { Slide } from "react-awesome-reveal";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -20,7 +21,8 @@ const Projects = () => {
       });
   }, []);
   return (
-    <div className='w-full m-8'>
+    <Slide duration={3000} direction="down" triggerOnce>
+      <div className='w-full m-8'>
       <h2 className='text-center my-4 text-2xl md:text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500'>
         Projects
       </h2>
@@ -42,6 +44,7 @@ const Projects = () => {
         </div>
       </div>
     </div>
+    </Slide>
   );
 };
 

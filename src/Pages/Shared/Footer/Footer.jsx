@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Slide } from "react-awesome-reveal";
 
 const Footer = () => {
   const [currentYear, setCurrentYear] = useState(null);
@@ -11,7 +12,8 @@ const Footer = () => {
     getCurrentYear();
   }, [currentYear]);
   return (
-    <div className='grid grid-cols-12'>
+    <Slide duration={3000} direction="down" triggerOnce>
+      <div className='grid grid-cols-12'>
       <div className='col-span-full flex items-baseline justify-center my-8'>
         <p>&copy; Design and Developed By: Sarwar Hossain</p>
       </div>
@@ -19,6 +21,7 @@ const Footer = () => {
         <p>&copy; Copyright : {currentYear}</p>
       </div>
     </div>
+    </Slide>
   );
 };
 

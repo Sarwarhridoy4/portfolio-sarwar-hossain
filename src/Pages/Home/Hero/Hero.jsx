@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <Slide direction='right' duration={2000} triggerOnce>
-      <div className='w-[80vw] min-h-screen mx-auto grid grid-cols-12 relative'>
+      <div className='w-[95vw] min-h-screen mx-auto grid grid-cols-12 relative'>
          {/* Whats App Section */}
       <div className='wa__container fixed right-2 top-16'>
         <a href='https://wa.me/+8801862447844' target='_blank' rel='noreferrer' title="Get in touch on WhatsApp">
