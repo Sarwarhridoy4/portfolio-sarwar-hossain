@@ -11,8 +11,11 @@ import { Slide } from "react-awesome-reveal";
 const About = () => {
   return (
     <div className='overflow-hidden'>
+      <Slide direction="right">
       <div className='w-full min-h-screen flex flex-col items-center justify-center gap-20'>
-        <h2 className='text-2xl md:text-3xl lg:text-5xl font-semibold'>Who I am</h2>
+        <h2 className='text-2xl md:text-3xl lg:text-5xl font-semibold'>
+          Who I am
+        </h2>
         <div className='w-40 h-40 flex items-center justify-center rounded-full relative'>
           <img
             src={myself}
@@ -47,7 +50,10 @@ const About = () => {
                     1000,
                     "A React Developer",
                     1000,
+                    "A React Native Developer",
+                    1000,
                     "A NodeJS Developer",
+                    1000,
                   ]}
                   wrapper='span'
                   speed={10}
@@ -59,8 +65,12 @@ const About = () => {
           </div>
         </div>
       </div>
+      </Slide>
+      <Slide direction="left">
       <div className='w-full min-h-screen flex flex-col items-center justify-center'>
-        <h2 className='text-2xl md:text-3xl lg:text-5xl font-semibold'>Overview</h2>
+        <h2 className='text-2xl md:text-3xl lg:text-5xl font-semibold'>
+          Overview
+        </h2>
         <div className='w-full my-9'>
           <div className='mockup-window border bg-base-300'>
             <div className='flex items-start justify-start px-8 py-8 bg-base-200'>
@@ -89,8 +99,12 @@ const About = () => {
           </div>
         </div>
       </div>
+      </Slide>
+      <Slide direction="right">
       <div className='w-full min-h-screen flex flex-col items-center justify-center'>
-        <h2 className='text-2xl md:text-3xl lg:text-5xl font-semibold'>Education</h2>
+        <h2 className='text-2xl md:text-3xl lg:text-5xl font-semibold'>
+          Education
+        </h2>
         <div className='w-full my-9'>
           <div className='mockup-code'>
             <pre data-prefix='$'>
@@ -138,6 +152,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      </Slide>
       <Slide direction='left'>
         <div className='w-full min-h-screen flex flex-col items-center justify-center'>
           <h2 className='text-5xl font-semibold'>Connect With Me</h2>

@@ -35,7 +35,7 @@ const Experiences = () => {
                 Company : 3W Private Ltd
               </p>
               <p className='mt-2 text-slate-50 text-sm md:text-md'>
-                Span : Aug 2023 - Present · 5 mos
+                Span : Aug 2023 - Aug 2024 · 1 year
               </p>
               <p className='mt-2 text-slate-50 text-sm md:text-md'>
                 Location : Greather Noida · Remote
