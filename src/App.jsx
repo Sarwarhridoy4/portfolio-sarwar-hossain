@@ -1,48 +1,16 @@
-import { Suspense, useEffect, useState } from "react";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
-import options from "./utils/option";
-// import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
-// import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import { Suspense } from "react";
 import { Toaster } from "react-hot-toast";
 import AnimatedCursor from "react-animated-cursor";
 import { RouterProvider } from "react-router-dom";
 import router from "./Router/routes";
 import SuspensePage from "./Pages/Suspense/Suspense";
-// import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
 const App = () => {
-  const [init, setInit] = useState(false);
-
-  // this should be run only once per application lifetime
-  useEffect(() => {
-    initParticlesEngine(async (engine) => {
-      // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-      // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-      // starting from v2 you can add only the features you need reducing the bundle size
-      //await loadAll(engine);
-      //await loadFull(engine);
-      await loadSlim(engine);
-      //await loadBasic(engine);
-    }).then(() => {
-      setInit(true);
-    });
-  }, []);
-
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
-
-  if (init) {
-    return (
+  return (
+    <>
       <Suspense fallback={<SuspensePage />}>
-        <Particles
-          id='tsparticles'
-          particlesLoaded={particlesLoaded}
-          options={options}
-        />
-        <div className='max-w-[1240px] font-poppins text-white text-[16px] w-[90vw] mx-auto grid grid-cols-12'>
-          <div className='col-span-full'>
+        <div className='w-full p-6 font-poppins text-white text-[16px] mx-auto grid grid-cols-12 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900 via-slate-800 to-black'>
+          <div className='col-span-full mx-auto'>
             <Toaster />
             <AnimatedCursor
               innerSize={16}
@@ -69,9 +37,7 @@ const App = () => {
           </div>
         </div>
       </Suspense>
-    );
-  }
-
-  return <></>;
+    </>
+  );
 };
 export default App;
