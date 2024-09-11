@@ -3,12 +3,12 @@ import { Toaster } from "react-hot-toast";
 import AnimatedCursor from "react-animated-cursor";
 import { RouterProvider } from "react-router-dom";
 import router from "./Router/routes";
-import SuspensePage from "./Pages/Suspense/Suspense";
+import LoadingAnimation from "./components/HBanner/Loading";
 
 const App = () => {
   return (
     <>
-      <Suspense fallback={<SuspensePage />}>
+      <Suspense fallback={<LoadingAnimation />}>
         <div className='w-full p-6 font-poppins text-white text-[16px] mx-auto grid grid-cols-12 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-blue-900 via-slate-800 to-black'>
           <div className='col-span-full mx-auto'>
             <Toaster />

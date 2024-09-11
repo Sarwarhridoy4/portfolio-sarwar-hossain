@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { XMarkIcon } from '@heroicons/react/20/solid'
 import { useEffect, useState } from 'react'
 const api = import.meta.env.VITE_ENDPOINT
