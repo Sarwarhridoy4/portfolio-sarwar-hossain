@@ -4,7 +4,7 @@ import EachProject from "./EachProject/EachProject";
 import anime from "animejs";
 import { Slide } from "react-awesome-reveal";
 import Loading from "../../components/HBanner/Loading";
-
+const getProjects = `${import.meta.env.VITE_ENDPOINT_PORTFOLIO}/projects`;
 const Projects = () => {
   const [projects, setProjects] = useState([]);
   const radarRef = useRef(null); // Ref for radar animation
@@ -12,7 +12,7 @@ const Projects = () => {
   useEffect(() => {
     // Making a GET request using Axios
     axios
-      .get("https://portfolio-server-weld.vercel.app/projects")
+      .get(getProjects)
       .then((response) => {
         // Handle the response data here
         setProjects(response.data);

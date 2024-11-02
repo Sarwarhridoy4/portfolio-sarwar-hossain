@@ -38,7 +38,7 @@ const AddProject = () => {
       data.images.forEach((image) => formData.append("images", image));
 
       const response = await axios.post(
-        "https://portfolio-server-weld.vercel.app/upload-project",
+        `${import.meta.env.VITE_ENDPOINT_PORTFOLIO}/upload-project`,
         formData,
         {
           headers: {
